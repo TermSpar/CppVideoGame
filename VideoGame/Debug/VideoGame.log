@@ -1,0 +1,30 @@
+﻿  Level2.cpp
+c:\users\ben\source\repos\cppgame-master\videogame\level2.cpp(20): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\ben\source\repos\cppgame-master\videogame\level2.cpp(119): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\ben\source\repos\cppgame-master\videogame\level2.cpp(122): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\ben\source\repos\cppgame-master\videogame\level2.cpp(127): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\ben\source\repos\cppgame-master\videogame\level2.cpp(130): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\ben\source\repos\cppgame-master\videogame\level2.cpp(175): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Main.cpp
+c:\users\ben\source\repos\cppgame-master\videogame\textbox.h(47): warning C4018: '<': signed/unsigned mismatch
+c:\users\ben\source\repos\cppgame-master\videogame\main.cpp(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\ben\source\repos\cppgame-master\videogame\main.cpp(41): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\ben\source\repos\cppgame-master\videogame\main.cpp(248): warning C4018: '>=': signed/unsigned mismatch
+  Generating Code...
+  VideoGame.vcxproj -> C:\Users\Ben\source\repos\CppGame-master\Debug\VideoGame.exe
