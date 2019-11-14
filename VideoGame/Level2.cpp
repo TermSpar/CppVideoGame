@@ -47,7 +47,7 @@ void Level2::loadLevel() {
 	axe.setTexture(axeTexture);
 	axe.setPosition({ 400,400 });
 
-	// Enemies:
+	/* Enemies:
 	enemyTexture.loadFromFile("resources/enemy.png");
 	float loc = 200;
 	for (int i = 0; i < 3; i++) {
@@ -56,7 +56,14 @@ void Level2::loadLevel() {
 		enemyVec[i]->setPosition({ 700, loc });
 		enemyVec[i]->setRange(200);
 		loc += 100;
-	}
+	}*/
+
+	// NPCs:
+	npcTexture.loadFromFile("resources/npc.png");
+	npcVec.push_back(new NPC());
+	npcVec[0]->setTexture(npcTexture);
+	npcVec[0]->setPosition({ 700, 100 });
+	npcVec[0]->setRange(20);
 
 	// Healthpacks:
 	hPackRegen = 10;
@@ -192,7 +199,7 @@ void Level2::runLevel(sf::RenderWindow &window, Player &player, Inventory &inv, 
 		levelState++;
 	}
 
-	// Draw enemies and make them wander:
+	/* Draw enemies and make them wander:
 	for (EnemyParent *enemy : enemyVec) {
 		if (!enemy->hasDied())
 			enemy->drawTo(window);
@@ -221,6 +228,15 @@ void Level2::runLevel(sf::RenderWindow &window, Player &player, Inventory &inv, 
 		if (player.intersects(enemy->getGlobalBounds()) && !enemy->hasDied()) {
 			player.changeHealth(-10);
 			enemy->move({ 300, 300 });
+		}
+	}*/
+
+	// NPC interactions:
+	for (int i = 0; i < npcVec.size(); i++) {
+		npcVec[i]->drawTo(window);
+		if (npcVec[i]->inRange(player)) {
+			std::cout << "YES\n";
+			player.stop();
 		}
 	}
 }

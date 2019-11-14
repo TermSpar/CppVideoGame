@@ -34,6 +34,7 @@
     <ClCompile Include="LoadLevel.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MBox.cpp" />
+    <ClCompile Include="NPC.cpp" />
     <ClCompile Include="OpenFileDialog.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SaveFileDialog.cpp" />
@@ -57,6 +58,7 @@
     <ClInclude Include="LoadHandler.h" />
     <ClInclude Include="LoadLevel.h" />
     <ClInclude Include="MBox.h" />
+    <ClInclude Include="NPC.h" />
     <ClInclude Include="ObjectParent.h" />
     <ClInclude Include="OpenFileDialog.h" />
     <ClInclude Include="Player.h" />

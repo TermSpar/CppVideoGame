@@ -15,6 +15,7 @@
 #include "Endpoint.h"
 #include "Inventory.h"
 #include "Transitions.h"
+#include "NPC.h"
 
 class Level2 {
 public:
@@ -49,6 +50,12 @@ private:
 	std::vector<EnemyParent*> enemyVec;
 	float enemySpeed;
 	float angle;
+
+	// NPCs:
+	sf::Texture npcTexture;
+	std::vector<NPC*> npcVec;
+	float npcSpeed;
+	float npcAngle;
 
 	// Healthpacks:
 	sf::Texture hPackTexture;
